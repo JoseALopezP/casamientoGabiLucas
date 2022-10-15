@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Brittany Signature;
+    src: url(../../../public/assets/fonts/BrittanySignature.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.introductionBlock{
+    background: url('../../../public/assets/novios.png'), #ffecd367;
+    background-blend-mode: lighten;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto 911px;
+    height: 911px;
+    width: 100vw;
+    height: 911px;
+    margin: 0px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 880px)
+}
+h1{
+    font-family: 'Brittany Signature';
+    color: #9d8028;
+    position: relative;
+}
+h4{
+    font-family: montserrat;
+    color: #8a9c5f;
+    font-size: xx-large;
+}
+.dateBlock{
+    position: relative;
+    text-align: center;
+    top: 75px;
+}
+.introductionNames{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    font-size: 100px;
+}
+.introductionName1{
+    top: 75px;
+}
+.introductionNameAmp{
+    top: 200px;
+}
+.introductionName2{
+    top: 375px;
+}

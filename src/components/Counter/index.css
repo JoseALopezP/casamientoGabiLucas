@@ -1,0 +1,12 @@
+.clockBlock{
+    display: flex;
+}
+.countdownItem{
+    padding: 20px 0px;
+    min-width: 60px;
+    margin: 20px;
+    border-width: 0px 1px;
+    border-color: black;
+    border-style: solid;
+    margin: 5px;
+}
