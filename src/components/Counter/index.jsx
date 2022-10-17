@@ -1,10 +1,13 @@
 import Clock from './clock';
 import './index.css';
 
-const Counter = () => {
+const Counter = ({time}) => {
     return (
-        <div className="clockBlock">
-            <Clock countdownTimestampMs={1670632200000}/>
+        <div className="countdownBlock">
+            <h4>SOLO FALTAN</h4>
+            <div className="clockBlock">
+                <Clock countdownTimestampMs={time}/>
+            </div>
         </div>
     );
 }

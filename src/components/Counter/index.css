@@ -1,12 +1,39 @@
+.countdownBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+}
+.countdownBlock h4{
+    margin-bottom: 10px;
+    letter-spacing: 8px;
+    font-weight: 200;
+    color: #8f8f8f;
+}
 .clockBlock{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 .countdownItem{
     padding: 20px 0px;
-    min-width: 60px;
+    min-width: 200px;
     margin: 20px;
     border-width: 0px 1px;
-    border-color: black;
+    border-color: #8f8f8f;
     border-style: solid;
     margin: 5px;
+    text-align: center;
+    font-size: 80px;
+    font-family: montserrat;
+    font-weight: 900;
+    color: #8f8f8f;
+}
+.countdownItem h5{
+    font-size: small;
+    font-weight: 200;
 }
