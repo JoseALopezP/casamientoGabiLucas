@@ -27,8 +27,16 @@ export const ListProvider = ({defaultValue = [], children}) => {
         updateList()
     }, [])
 
+    const getListLength = () => {
+        return list.length()
+    }
+
     const addGuest = async (data) => {
-        
+        try {
+            await setDoc(doc(db, "confirmationList"), data);
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     const removeGuest = async (id) => {
@@ -43,6 +51,8 @@ export const ListProvider = ({defaultValue = [], children}) => {
         clearList,
         updateList,
         removeGuest,
+        addGuest,
+        getListLength,
         list
     }
     return(
