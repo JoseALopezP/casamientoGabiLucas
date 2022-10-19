@@ -8,31 +8,43 @@
     box-sizing: border-box;
 }
 .introductionBlock{
-    background: url('../../../public/assets/novios.png'), #ffecd367;
-    background-blend-mode: lighten;
+    background: url('../../../public/assets/novios.png'), #00000057;
+    background-blend-mode:darken;
+    background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: auto 911px;
     height: 911px;
     width: 100vw;
-    height: 911px;
     margin: 0px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 880px)
 }
 h1{
     font-family: 'Brittany Signature';
-    color: #9d8028;
+    color: #ffffff;
     position: relative;
 }
 h4{
     font-family: montserrat;
-    color: #8a9c5f;
+    color: #f4fce1;
     font-size: xx-large;
-}
-.dateBlock{
     position: relative;
     text-align: center;
+    font-weight: 100;
+}
+.messageBlock{
     top: 75px;
+    letter-spacing: 5px;
+}
+.bibleVerse{
+    margin: 0 5% 0 5%;
+    position: relative;
+    top: 400px;
+    font-size: x-large;
+    font-style: italic;
+}
+.bibleVerse2{
+    text-align: end;
 }
 .introductionNames{
     display: flex;
@@ -40,7 +52,7 @@ h4{
     justify-content: center;
     width: 100vw;
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
 }
 .introductionName1{
     top: 75px;

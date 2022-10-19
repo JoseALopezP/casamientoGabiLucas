@@ -1,0 +1,54 @@
+.dateBlock{
+    background: url('../../../public/assets/novios2.png'), #00000057;
+    padding: 60px 30px;
+    background-blend-mode:darken;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 100% 31px, 100% 100%, 0% 100%)
+}
+
+
+.dateStaticBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #9d8028;
+}
+.dateBlockItem{
+    align-self: center;
+    padding: 20px 0 20px 0;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    font-size: xx-large;
+    font-family: montserrat;
+    color: #9d8028;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #9d8028;
+}
+.dateBlockItem:hover{
+    background-color: #9d80282c;
+}
+.dateBlockItem p, .dateBlockItem a p{
+    margin-left: 30px;
+    width: 70%;
+    
+}
+.dateBlockItem a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.dateBlockItem img{
+    max-width: 100px;
+}
