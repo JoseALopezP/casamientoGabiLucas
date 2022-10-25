@@ -52,3 +52,8 @@ a{
 .dateBlockItem img{
     max-width: 100px;
 }
+
+.modal{
+    z-index: 10000;
+    opacity: 1;
+}

@@ -1,11 +1,9 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import {getFirestore} from 'firebase/firestore';
-import 'dotenv/config';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
+  apiKey: process.env.REACT_APP_APIKEY,
   authDomain: "casamientogabilucas.firebaseapp.com",
   projectId: "casamientogabilucas",
   storageBucket: "casamientogabilucas.appspot.com",
@@ -15,3 +13,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export default db

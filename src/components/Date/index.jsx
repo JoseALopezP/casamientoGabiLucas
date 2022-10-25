@@ -6,8 +6,7 @@ const Date = ({qDinner}) => {
 
     return (
         <div className='dateBlock'>
-          <DateStaticBlock qDinner={qDinner}/>
-          
+          <DateStaticBlock/>
         </div>
     );
 }

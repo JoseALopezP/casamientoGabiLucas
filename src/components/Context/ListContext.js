@@ -1,42 +1,39 @@
-import { createContext, useState } from "react";
-
+import React, { createContext, useState} from "react";
+import { collection, getDocs, doc, addDoc, deleteDoc } from 'firebase/firestore';
+import db from '../services/firebase';
 export const ListContext = createContext({});
 
 const {Provider} = ListContext;
 
 export const ListProvider = ({defaultValue = [], children}) => {
     const [list, setList] = useState(defaultValue);
-    
-<<<<<<< HEAD
+    const [qDinner, setQDinner] = useState(defaultValue);
+    const collectionReference = collection(db, "confirmationList");
 
-    const context = {
-
-=======
     const clearList = () => {
         setList([]);
     }
+
     const updateList = async() => {
         try{
             const document = collection(db, 'Products')
             const col = await getDocs(document)
             console.log('col.docs', col.docs)
-            const result = col.docs.map((doc) => doc = {id: doc.id, ...doc.data()})
+            const result = await col.docs.map((doc) => doc = {id: doc.id, ...doc.data()})
             setList(result)
         }catch(error){
             console.log(error)
         }
-    } 
-    useEffect(() =>{
-        updateList()
-    }, [])
+    }
 
     const getListLength = () => {
         return list.length()
     }
 
-    const addGuest = async (data) => {
+    const addGuest = async(data) => {
         try {
-            await setDoc(doc(db, "confirmationList"), data);
+            await addDoc(collectionReference, data);
+            console.log(5);
         } catch (error) {
             console.log(error)
         }
@@ -56,8 +53,9 @@ export const ListProvider = ({defaultValue = [], children}) => {
         removeGuest,
         addGuest,
         getListLength,
-        list
->>>>>>> 27d13c5387bfc93d95c9020e270cc4ca5ddae764
+        list,
+        setQDinner,
+        qDinner
     }
     return(
         <>

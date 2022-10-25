@@ -1,4 +1,5 @@
 import React from 'react';
+import Confirmation from './Confirmation';
 
 const DateStaticBlock = (qDinner) => {
     return (
@@ -15,6 +16,7 @@ const DateStaticBlock = (qDinner) => {
                 <img src="assets/clockIcon.png" alt="Iglesia" />
                 {qDinner ? (<p>22:30</p>):(<p>00:30</p>)}
             </div>
+            <Confirmation qDinner={qDinner}/>
         </div>
     );
 }
