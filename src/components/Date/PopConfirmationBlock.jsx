@@ -5,6 +5,7 @@ import {Timestamp} from "firebase/firestore";
 const PopConfirmationBlock = () => {
     const {addGuest, qDinner} = useContext(ListContext);
     const [sentStatus, setSentStatus] = useState(true);
+    const [isOk, setIsOk] = useState(false);
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
     const [dni, setDNI] = useState();
@@ -12,29 +13,37 @@ const PopConfirmationBlock = () => {
 
     const handleSubmit = async(event) => {
         event.preventDefault();
-        const now = new Date()
-        now.setHours(-3, 0, 0, 0) // +5 hours for Eastern Time.
-        const timestamp = Timestamp.fromDate(now);
-        console.log(1);
-        console.log(qDinner);
-        const data = {
-            "nombre": name, 
-            "apellido": surname,
-            "dni": dni,
-            "diet": diet,
-            "dinner": qDinner,
-            "date": timestamp,
+        if(isNaN(dni)){
+            setIsOk(true);
+        }else{
+            const now = new Date()
+            now.setHours(-3, 0, 0, 0) // +5 hours for Eastern Time.
+            const timestamp = Timestamp.fromDate(now);
+            console.log(qDinner);
+            const data = {
+                "nombre": name,
+                "apellido": surname,
+                "dni": dni,
+                "diet": diet,
+                "dinner": qDinner,
+                "date": timestamp,
+            }
+            await addGuest(data);
+            setIsOk(false);
+            setSentStatus(!sentStatus);
         }
-        console.log(2);
-        await addGuest(data);
-        console.log(3);
-        setSentStatus(!sentStatus);
-        console.log(4);
     }
 
     return (
         <>
-            {sentStatus ? (
+            {isOk && (
+                <div className="alert alert-danger d-flex align-items-center" role="alert">
+                    <div>
+                        Revisa el DNI antes de confirmar (no agregar puntos)
+                    </div>
+                </div>
+               )}
+            {sentStatus ? ( 
             <form onSubmit={(event) => handleSubmit(event)}>
             <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Nombre:</label>
@@ -52,9 +61,9 @@ const PopConfirmationBlock = () => {
                 <label htmlFor="exampleInputEmail1">¿Tiene alguna dieta especial? (opcional, ingresar cuál)</label>
                 <input type="diet" className="form-control" id="IngresarTipoDeDieta" aria-describedby="emailHelp" placeholder="Tipo de dieta" onChange={e => setDiet(e.target.value)}/>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary submitBtn">CONFIRMAR</button>
             </form>
-            ) : (<p>Su confirmación ha sido enviada con éxito</p>)}
+            ) : (<p>Su confirmación ha sido enviada con éxito {name} {surname} (DNI: {dni})</p>)}
         </>
     );
 }

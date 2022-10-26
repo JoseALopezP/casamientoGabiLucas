@@ -1,0 +1,60 @@
+.giftPageBlock{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-areas: 
+        "title title"
+        "transfer gifts";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    font-family: montserrat;
+}
+.giftPageBlock h4{
+    margin-bottom: 10px;
+    letter-spacing: 6px;
+    font-weight: 200;
+    font-size: xxx-large;
+    color: #8f8f8f;
+}
+.giftPageBlock p{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 200;
+    color: #8f8f8f;
+}
+.giftsTextBlock{
+    grid-area: title;
+    padding: 0;
+}
+.transferBtnBlock{
+    grid-area: transfer;
+    padding: 0;
+}
+.giftsBtnBlock{
+    grid-area: gifts;
+    padding: 0;
+}
+
+.transferBtn , .giftsBtn{
+    border-width: 0px 1px;
+    border-color: #8f8f8f;
+    border-style: solid;
+    text-align: center;
+    font-family: montserrat;
+    font-weight: 900;
+    color: #8f8f8f;
+}
+.transferBtn:hover , .giftsBtn:hover{
+    background-color: #8f8f8f;
+    color: white;
+}
+
+.selected{
+    background-color: #8f8f8f;
+}

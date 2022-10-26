@@ -1,22 +1,22 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import PopConfirmationBlock from './PopConfirmationBlock';
+import TransferBody from './TransferBody';
 
-const ModalConfirmation = (show, onHide) => {
+const ModalTransfer = (show, onHide) => {
     return (
         <>
             <Modal {...show} {...onHide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                Ingresa tus datos para confirmar asistencia
+                Aquí tienes nuestros datos
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <PopConfirmationBlock/>
+                <TransferBody/>
             </Modal.Body>
             </Modal>
         </>
     );
 }
 
-export default ModalConfirmation;
+export default ModalTransfer;

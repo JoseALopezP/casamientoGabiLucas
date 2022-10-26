@@ -5,7 +5,7 @@
     background-attachment: fixed;
     background-position: bottom center;
     background-repeat: no-repeat;
-    clip-path: polygon(0% 0%, 100% 31px, 100% 100%, 0% 100%)
+    clip-path: polygon(0% 0%, 100% 31px, 100% 100%, 0% calc(100% - 31px))
 }
 
 
@@ -19,7 +19,11 @@ a{
     text-decoration: none;
     color: #9d8028;
 }
-.dateBlockItem{
+a:hover{
+    text-decoration: none;
+    color: #9d8028;
+}
+.dateBlockItem, .btn-outline-warning{
     align-self: center;
     padding: 20px 0 20px 0;
     width: 80%;
@@ -56,4 +60,26 @@ a{
 .modal{
     z-index: 10000;
     opacity: 1;
+}
+
+.btn-outline-warning{
+    color: #9d8028;
+    border-color: #9d8028;
+    font-family: montserrat;
+}
+.btn-outline-warning:hover{
+    color: rgba(0, 0, 0, 0.459);
+    background-color: #9d80282c;
+    border-color: #9d8028;
+}
+.btn-outline-warning:active{
+    color: #000;
+    background-color: #9d8028;
+    border-color: #9d8028;
+}
+
+.btn-outline-warning:disabled{
+    color: #9d8028;
+    background-color: transparent;
+    border-color: #9d8028;
 }

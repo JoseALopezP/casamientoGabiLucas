@@ -1,22 +1,22 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import PopConfirmationBlock from './PopConfirmationBlock';
+import GiftPageBody from './GiftPageBody';
 
-const ModalConfirmation = (show, onHide) => {
+const ModalGiftPage = (show, onHide) => {
     return (
         <>
             <Modal {...show} {...onHide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                Ingresa tus datos para confirmar asistencia
+                Elige el regalo que quieras hacer
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <PopConfirmationBlock/>
+                <GiftPageBody/>
             </Modal.Body>
             </Modal>
         </>
     );
 }
 
-export default ModalConfirmation;
+export default ModalGiftPage;

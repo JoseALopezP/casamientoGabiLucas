@@ -14,9 +14,10 @@ export const ListProvider = ({defaultValue = [], children}) => {
         setList([]);
     }
 
+
     const updateList = async() => {
         try{
-            const document = collection(db, 'Products')
+            const document = collection(db, 'confirmationList')
             const col = await getDocs(document)
             console.log('col.docs', col.docs)
             const result = await col.docs.map((doc) => doc = {id: doc.id, ...doc.data()})
