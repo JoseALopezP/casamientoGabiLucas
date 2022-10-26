@@ -23,6 +23,7 @@ h1{
     font-family: 'Brittany Signature';
     color: #ffffff;
     position: relative;
+    font-size: 100px;
 }
 h4{
     font-family: montserrat;
@@ -33,13 +34,13 @@ h4{
     font-weight: 100;
 }
 .messageBlock{
-    top: 75px;
+    top: 30px;
     letter-spacing: 5px;
 }
 .bibleVerse{
     margin: 0 5% 0 5%;
     position: relative;
-    top: 400px;
+    top: 450px;
     font-size: x-large;
     font-style: italic;
 }
