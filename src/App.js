@@ -7,6 +7,7 @@ import { GListProvider } from "./components/Context/GiftListContext";
 import { GiftedListProvider } from "./components/Context/GiftedListContext";
 import Dinner from "./components/Dinner";
 import After from "./components/After";
+import CoupleControl from "./components/CoupleControl";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <GiftedListProvider>
       <BrowserRouter>
       <Routes>
+        <Route path="/" element={<CoupleControl/>} />
         <Route path="/cena" element={<Dinner/>} />
         <Route path="/dcena" element={<After/>} />
       </Routes>

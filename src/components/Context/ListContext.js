@@ -43,6 +43,7 @@ export const ListProvider = ({defaultValue = [], children}) => {
     const removeGuest = async (id) => {
         try{
             await deleteDoc(doc(db, 'confirmationList', id))
+            updateList();
         }catch (error){
             console.log(error)
         }

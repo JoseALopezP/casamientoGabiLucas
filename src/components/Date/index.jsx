@@ -2,7 +2,7 @@ import React from 'react';
 import DateStaticBlock from './DateStaticBlock';
 import './index.css';
 
-const Date = ({qDinner}) => {
+const Date = () => {
 
     return (
         <div className='dateBlock'>

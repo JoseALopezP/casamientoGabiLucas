@@ -11,17 +11,17 @@ const GiftPage = () => {
         <div className='giftPageBlock'>
             <div className="giftsTextBlock">
                 <h4>SI QUIERES AYUDARNOS...</h4>
-                <p>El mejor regalo es tu presencia, pero si nos querés ayudar en nuestro nuevo camino sugerimos de 2 formas:</p>
+                <p>nuestro mejor regalo es tu presencia, pero si querés hacernos un presente, podés hacerlo de dos maneras:</p>
             </div>
             <div className="transferBtnBlock">
                 <Button variant="outline-warning transferBtn" onClick={() => setModalShow2(true)}>
-                    TRANSFERENCIA
+                    TRANSFERENCIA BANCARIA
                 </Button>
                 <ModalTransfer show={modalShow2} onHide={() => setModalShow2(false)} />
             </div>
             <div className="giftsBtnBlock">
                 <Button variant="outline-warning giftsBtn" onClick={() => setModalShow3(true)}>
-                    LISTA DE REGALOS
+                    LISTA DE OBSEQUIOS
                 </Button>
                 <ModalGiftPage show={modalShow3} onHide={() => setModalShow3(false)} />
             </div>

@@ -17,7 +17,7 @@ const PopConfirmationBlock = () => {
             setIsOk(true);
         }else{
             const now = new Date()
-            now.setHours(-3, 0, 0, 0) // +5 hours for Eastern Time.
+            now.setHours(10, 0, 0, 0) // +5 hours for Eastern Time.
             const timestamp = Timestamp.fromDate(now);
             console.log(qDinner);
             const data = {

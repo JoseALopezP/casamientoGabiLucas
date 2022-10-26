@@ -7,7 +7,7 @@ import GiftPage from '../GiftPage';
 
 const Dinner = () => {
     const {setQDinner} = useContext(ListContext);
-    setQDinner(true);
+    setQDinner(false);
     return (
         <>
             <Introduction/>

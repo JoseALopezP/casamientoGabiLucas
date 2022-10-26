@@ -1,5 +1,5 @@
 import React, { createContext, useState} from "react";
-import { collection, getDocs, addDoc, doc, updateDoc} from 'firebase/firestore';
+import { collection, getDocs, addDoc, doc, updateDoc, deleteDoc} from 'firebase/firestore';
 import db from '../services/firebase';
 export const GListContext = createContext({});
 
@@ -42,6 +42,15 @@ export const GListProvider = ({defaultValue = [], children}) => {
             console.log(error)
         }
     }
+
+    const removeGift = async (id) => {
+        try{
+            await deleteDoc(doc(db, 'askedGifts', id))
+            await updateGList();
+        }catch (error){
+            console.log(error)
+        }
+    }
     const context = {
         addGift,
         updateGList,
@@ -49,7 +58,8 @@ export const GListProvider = ({defaultValue = [], children}) => {
         gList,
         idSelected,
         selectId, 
-        setIdSelected
+        setIdSelected,
+        removeGift
     }
     return(
         <>
