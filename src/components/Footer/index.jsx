@@ -11,7 +11,7 @@ const Footer = () => {
             </div>
             <div className="contactInfo">
                 <p className='contactMsg'>Por cualquier duda o modificación, podés contactarte con cualquiera de nosotros a nuestros números de celular:</p>
-                <p className='contactGabi'>264-45475366 (Gabi)</p>
+                <p className='contactGabi'>264-5475366 (Gabi)</p>
                 <p className='contactLucas'>264-5868113 (Lucas)</p>
             </div>
         </div>

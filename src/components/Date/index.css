@@ -60,6 +60,10 @@ a:hover{
     width: 70%;
     
 }
+.dividingBar{
+    margin: 0px;
+    width: 10px;
+}
 .dateBlockItem a{
     display: flex;
     align-items: center;
@@ -96,6 +100,7 @@ a:hover{
     .dateBlock{
         background-size: 100%;
     }
+    
 }
 @media (min-width: 770px){
     .partyBlockItem{
@@ -103,6 +108,10 @@ a:hover{
     }
     .partyBlockItem p{
         width: 30%;
+    }
+    .dividingBar{
+        margin: 0px;
+        width: 10px;
     }
 }
 @media (max-width: 425px){
@@ -117,6 +126,10 @@ a:hover{
     .dateBlockItem p, .dateBlockItem a p{
         margin-left: 10px;
         width: 90%;
+    }
+    .dividingBar{
+        margin: 0px;
+        width: 10px;
     }
     .dateMsgBlockItem{
         width: 96%;

@@ -20,7 +20,7 @@ const DateStaticBlock = () => {
             <div className="clock dateBlockItem partyBlockItem">
                 <img src="assets/clockIcon.png" alt="Iglesia" />
                 {qDinner ? (<p>22:30</p>):(<p>00:30</p>)}
-                <img src="assets/hanger.png" alt="Iglesia" className='hangerImg'/>
+                <img src="assets/divider.png" alt="Iglesia" />
                 <p>Elegante Formal</p>
             </div>
             <div className="party dateBlockItem dateBlockItemHover"><a target="_blank" rel="noreferrer" href='https://goo.gl/maps/mZt5ZBj3uAjBieNi7'>
