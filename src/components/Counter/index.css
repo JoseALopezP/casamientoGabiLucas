@@ -40,6 +40,30 @@
     font-weight: 200;
 }
 
+
+@media (max-width: 769px){
+    .countdownBlock{
+        width: 100%;
+        height: 150px;
+    }
+    .countdownItem{
+        padding: 20px 0px;
+        min-width: calc(100vw / 4.6);
+        margin: 0px;
+        font-size: 60px;
+        height: 120px;
+        padding: 10px;
+    }
+    .countdownBlock h4{
+        margin-bottom: 0px;
+        letter-spacing: 4px;
+    }
+    .countdownItem h5{
+        font-size: mall;
+        margin: 0px;
+    }
+    
+}
 @media (max-width: 425px){
     .countdownBlock{
         width: 100%;
@@ -47,6 +71,7 @@
     }
     .countdownItem{
         padding: 20px 0px;
+        
         min-width: calc(100vw / 4.6);
         margin: 5px;
         font-size: 40px;
@@ -59,29 +84,6 @@
     }
     .countdownItem h5{
         font-size: x-small;
-        margin: 0px;
-    }
-    
-}
-@media (max-width: 769px){
-    .countdownBlock{
-        width: 100%;
-        height: 150px;
-    }
-    .countdownItem{
-        padding: 20px 0px;
-        min-width: calc(100vw / 4.6);
-        margin: 5px;
-        font-size: 60px;
-        height: 120px;
-        padding: 10px;
-    }
-    .countdownBlock h4{
-        margin-bottom: 0px;
-        letter-spacing: 4px;
-    }
-    .countdownItem h5{
-        font-size: mall;
         margin: 0px;
     }
     

@@ -75,6 +75,26 @@
     width: 100%;
 }
 
+@media (max-width: 769px){
+    .giftPageBlock{
+        margin: 0px;
+    }
+    .giftPageBlock h4{
+        margin-bottom: 10px;
+        letter-spacing: 4px;
+        font-weight: 200;
+        font-size: xx-large;
+    }
+    .giftPageBlock p{
+        margin: 0px 20px 0 20px;
+        text-align: center;
+        font-size: large;
+    }
+    .transferBtn , .giftsBtn{
+        width: 42vw;
+    }
+}
+
 @media (max-width: 425px){
     .giftPageBlock{
         display: flex;
@@ -100,24 +120,8 @@
     .transferBtn , .giftsBtn{
         width: 90vw;
     }
+    .transferBtnBlock .giftsBtnBlock{
+        width: 90vw;
+    }
 }
 
-@media (max-width: 769px){
-    .giftPageBlock{
-        margin: 0px;
-    }
-    .giftPageBlock h4{
-        margin-bottom: 10px;
-        letter-spacing: 4px;
-        font-weight: 200;
-        font-size: xx-large;
-    }
-    .giftPageBlock p{
-        margin: 0px 20px 0 20px;
-        text-align: center;
-        font-size: large;
-    }
-    .transferBtn , .giftsBtn{
-        width: 42vw;
-    }
-}
