@@ -17,7 +17,7 @@ const DateStaticBlock = () => {
             <div className="clock dateMsgBlockItem">
              <p>Luego de la Ceremonia, te esperamos para celebrar juntos en:</p>
             </div>
-            <div className="clock dateBlockItem">
+            <div className="clock dateBlockItem partyBlockItem">
                 <img src="assets/clockIcon.png" alt="Iglesia" />
                 {qDinner ? (<p>22:30</p>):(<p>00:30</p>)}
                 <img src="assets/hanger.png" alt="Iglesia" className='hangerImg'/>

@@ -92,6 +92,14 @@ a:hover{
     border-color: #9d8028;
 }
 
+@media (max-width: 1441px){
+    .partyBlockItem{
+        width: 80%;
+    }
+    .partyBlockItem p{
+        width: 30%;
+    }
+}
 @media (max-width: 425px){
     .dateBlockItem, .btn-outline-warning{
         width: 96%;

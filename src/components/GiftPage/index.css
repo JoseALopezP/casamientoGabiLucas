@@ -75,6 +75,13 @@
     width: 100%;
 }
 
+@media (max-width: 1441px){
+    .transferBtn , .giftsBtn{
+        width: 42vw;
+        margin: 5%px;
+        font-size: xx-large;
+    }
+}
 @media (max-width: 769px){
     .giftPageBlock{
         margin: 0px;
@@ -83,7 +90,7 @@
         margin-bottom: 10px;
         letter-spacing: 4px;
         font-weight: 200;
-        font-size: xx-large;
+        
     }
     .giftPageBlock p{
         margin: 0px 20px 0 20px;
@@ -94,7 +101,6 @@
         width: 42vw;
     }
 }
-
 @media (max-width: 425px){
     .giftPageBlock{
         display: flex;
