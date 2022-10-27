@@ -81,6 +81,11 @@
         margin: 5%px;
         font-size: xx-large;
     }
+    .card{
+        margin: 5px;
+        height: 400px;
+        width: 300px;
+    }
 }
 @media (max-width: 769px){
     .giftPageBlock{

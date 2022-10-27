@@ -1,7 +1,6 @@
 import React, {useState, useContext} from 'react';
 import { GListContext } from '../Context/GiftListContext';
 import { Card } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
 
 const GiftCard = ({item}) => {
     const {idSelected, selectId} = useContext(GListContext);
