@@ -92,7 +92,12 @@ a:hover{
     border-color: #9d8028;
 }
 
-@media (max-width: 1441px){
+@media (min-width: 1300px){
+    .dateBlock{
+        background-size: 100%;
+    }
+}
+@media (min-width: 770px){
     .partyBlockItem{
         width: 80%;
     }

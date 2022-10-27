@@ -74,8 +74,11 @@
 .card .btn{
     width: 100%;
 }
-
-@media (max-width: 1441px){
+.thankMsg{
+    font-size: large;
+    text-align: center;
+}
+@media (min-width: 770px){
     .transferBtn , .giftsBtn{
         width: 42vw;
         margin: 5%px;
@@ -87,6 +90,7 @@
         width: 300px;
     }
 }
+
 @media (max-width: 769px){
     .giftPageBlock{
         margin: 0px;
@@ -104,6 +108,16 @@
     }
     .transferBtn , .giftsBtn{
         width: 42vw;
+    }
+}
+@media (max-width: 730px){
+    .transferBtn , .giftsBtn{
+        font-size: x-large;
+    }
+}
+@media (max-width: 550px){
+    .transferBtn , .giftsBtn{
+        font-size: large;
     }
 }
 @media (max-width: 425px){
@@ -133,6 +147,11 @@
     }
     .transferBtnBlock .giftsBtnBlock{
         width: 90vw;
+    }
+}
+@media (max-width: 320px){
+    .giftPageBlock{
+        height: 400px;
     }
 }
 

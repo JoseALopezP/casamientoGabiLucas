@@ -1,0 +1,26 @@
+.footerBlock{
+    margin-top: 50px;
+    margin-left: 5vw;
+    width: 90vw;
+    text-align: center;
+    font-family: montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8f8f8f;
+}
+.contactInfo{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'cMsg cMsg' 'cGabi cLucas';
+}
+.contactMsg{
+    grid-area: cMsg;
+}
+.contactGabi{
+    grid-area: cGabi;
+}
+.contactLucas{
+    grid-area: cLucas;
+}

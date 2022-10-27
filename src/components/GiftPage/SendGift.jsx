@@ -87,7 +87,7 @@ const SendGift = ({type}) => {
             )}
             <button type="submit" className="btn btn-primary submitBtn">CONFIRMAR</button>
             </form>
-            ) : (<p className='thankMsg'>les pondría Muchas gracias!!! Tu obsequio nos ayuda mucho 🤍</p>)}
+            ) : (<p className='thankMsg'><b>Muchas gracias!!!</b> Tu obsequio nos ayuda mucho ❤️​</p>)}
         </>
     );
 }

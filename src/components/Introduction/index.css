@@ -58,15 +58,22 @@ h4{
 }
 .introductionName1{
     top: 75px;
+    margin: 20px;
 }
 .introductionNameAmp{
     top: 200px;
+    margin: 20px;
 }
 .introductionName2{
     top: 375px;
+    margin: 20px;
 }
-
-@media (max-width: 1441px){
+@media (min-width: 1800px){
+    .introductionBlock{
+        background-size: 100%;
+    }
+}
+@media (min-width: 770px){
     .introductionBlock{
         max-width: 100vw;
         height: 720px;
@@ -83,7 +90,7 @@ h4{
         top: 150px;
     }
     h1{
-        margin: 0 40px;
+        margin: 0 0px;
         font-size: 180px;
     }
     .bibleVerse{
@@ -97,8 +104,21 @@ h4{
 @media (max-width: 769px){
     .introductionBlock{
         max-width: 100vw;
-        height: 800px;
+        height: 650px;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% calc(100% - 31px))
+    }
+    .introductionName1{
+        top: 70px;
+        
+    }
+    .introductionNameAmp{
+        top: 150px;
+    }
+    .introductionName2{
+        top: 220px;
+    }
+    .bibleVerse{
+        top: 300px;
     }
 }
 @media (max-width: 425px){
