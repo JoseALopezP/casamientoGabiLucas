@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 300px;
     justify-content: center;
     margin-top: 40px;
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
 }
 .countdownItem{
@@ -38,4 +38,28 @@
 .countdownItem h5{
     font-size: small;
     font-weight: 200;
+}
+
+@media (max-width: 425px){
+    .countdownBlock{
+        width: 100%;
+        height: 100px;
+    }
+    .countdownItem{
+        padding: 20px 0px;
+        min-width: calc(100vw / 4.6);
+        margin: 5px;
+        font-size: 40px;
+        height: 80px;
+        padding: 10px;
+    }
+    .countdownBlock h4{
+        margin-bottom: 0px;
+        letter-spacing: 4px;
+    }
+    .countdownItem h5{
+        font-size: x-small;
+        margin: 0px;
+    }
+    
 }

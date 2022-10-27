@@ -2,3 +2,9 @@
     background: #fff fixed no-repeat 50% 50%;
     background-size: cover;
 }
+
+.submitBtn{
+    margin-top: 10px;
+    width: 100%;
+    align-self: center;
+}

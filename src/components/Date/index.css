@@ -1,5 +1,5 @@
 .dateBlock{
-    background: url('../../../public/assets/novios2.png'), #00000057;
+    background: url('../../../public/assets/novios2.png'), #0000008e;
     padding: 60px 30px;
     background-blend-mode:darken;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-left: 10%;
     font-size: xx-large;
     font-family: montserrat;
@@ -39,7 +39,20 @@ a:hover{
     border-style: solid;
     border-color: #9d8028;
 }
-.dateBlockItem:hover{
+.dateMsgBlockItem{
+    align-self: center;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 10%;
+    font-size: x-large;
+    font-family: montserrat;
+    color: #9d8028;
+}
+.dateBlockItemHover:hover{
     background-color: #9d80282c;
 }
 .dateBlockItem p, .dateBlockItem a p{
@@ -55,11 +68,6 @@ a:hover{
 }
 .dateBlockItem img{
     max-width: 100px;
-}
-
-.modal{
-    z-index: 10000;
-    opacity: 1;
 }
 
 .btn-outline-warning{
@@ -82,4 +90,27 @@ a:hover{
     color: #9d8028;
     background-color: transparent;
     border-color: #9d8028;
+}
+
+@media (max-width: 425px){
+    .dateBlockItem, .btn-outline-warning{
+        width: 96%;
+        margin-left: 2%;
+        font-size: x-large;
+    }
+    .dateBlockItem img{
+        max-width: 80px;
+    }
+    .dateBlockItem p, .dateBlockItem a p{
+        margin-left: 10px;
+        width: 90%;
+    }
+    .dateMsgBlockItem{
+        width: 96%;
+        margin-left: 2%;
+        font-size: large;
+    }
+    .modal{
+        width: 98vw;
+    }    
 }

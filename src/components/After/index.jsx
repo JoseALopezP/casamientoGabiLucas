@@ -7,7 +7,7 @@ import { ListContext } from '../Context/ListContext';
 
 const After = () => {
     const {setQDinner} = useContext(ListContext);
-    setQDinner(true);
+    setQDinner(false);
     return (
         <>
             <Introduction/>

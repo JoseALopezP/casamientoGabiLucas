@@ -10,8 +10,8 @@ const GiftPage = () => {
     return (
         <div className='giftPageBlock'>
             <div className="giftsTextBlock">
-                <h4>SI QUIERES AYUDARNOS...</h4>
-                <p>nuestro mejor regalo es tu presencia, pero si querés hacernos un presente, podés hacerlo de dos maneras:</p>
+                <h4>SI QUERÉS AYUDARNOS...</h4>
+                <p>Nuestro mejor regalo es tu presencia, pero si querés hacernos un presente, podés hacerlo de dos maneras:</p>
             </div>
             <div className="transferBtnBlock">
                 <Button variant="outline-warning transferBtn" onClick={() => setModalShow2(true)}>
