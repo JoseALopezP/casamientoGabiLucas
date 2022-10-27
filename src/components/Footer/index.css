@@ -24,3 +24,8 @@
 .contactLucas{
     grid-area: cLucas;
 }
+.footerMsg, .contactInfo{
+    padding: 20px;
+    border-width: 1px 0px;
+    border-style: dotted;
+}
