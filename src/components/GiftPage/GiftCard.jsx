@@ -8,11 +8,10 @@ const GiftCard = ({item}) => {
 
     return (
         <>
-            <Card style={{ width: '18rem' }} className={(idSelected == item.id) && ("selected")}>
+            <Card onClick={() => {selectId(item.id)}} style={{ width: '18rem' }} className={(idSelected == item.id) && ("selected")}>
             <Card.Img variant="top " src={item.img} />
             <Card.Body>
                 <Card.Title>{item.descripcion}</Card.Title>
-                <Button variant="primary" onClick={() => {selectId(item.id)}}>SELECCIONAR REGALO</Button>
             </Card.Body>
             </Card>
         </>
