@@ -43,6 +43,7 @@ h4{
     top: 450px;
     font-size: x-large;
     font-style: italic;
+    max-width: 1800px;
 }
 .bibleVerse2{
     text-align: end;
@@ -119,6 +120,22 @@ h4{
     }
     .bibleVerse{
         top: 300px;
+    }
+}
+@media (max-width: 580px){
+    .introductionBlock{
+        max-width: 100vw;
+        height: 700px;
+    }
+    .introductionName1{
+        margin: 0;
+        
+    }
+    .introductionNameAmp{
+        margin: 0;
+    }
+    .introductionName2{
+        margin: 0;
     }
 }
 @media (max-width: 425px){

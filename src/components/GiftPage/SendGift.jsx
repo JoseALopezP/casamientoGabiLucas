@@ -15,9 +15,9 @@ const SendGift = ({type}) => {
     
     const idToType = () =>{
         let typeFromId = '';
-        if(idSelected != ''){
+        if(idSelected !== ''){
             for(const element of gList){
-                if(element.id == idSelected){
+                if(element.id === idSelected){
                     typeFromId = element.descripcion;
                     break;
                 }
@@ -27,9 +27,9 @@ const SendGift = ({type}) => {
     }
     const handleSubmit = async(event) => {
         event.preventDefault();
-        if(idSelected == '' && transferNum == ''){
+        if(idSelected === '' && transferNum === ''){
             setIsOk('noSelected')
-        }else if(name == '' && transferNum == ''){
+        }else if(name === '' && transferNum === ''){
             setIsOk('noName')
         }else{
             const now = new Date()
@@ -39,11 +39,11 @@ const SendGift = ({type}) => {
                 "confirmationDate": timestamp,
                 "mensaje": msg,
                 "nombre": name,
-                "tipo": ((transferNum != '') ? 'transferencia' : idToType()),
+                "tipo": ((transferNum !== '') ? 'transferencia' : idToType()),
                 "transferNumber": transferNum,
             }
             await addGifted(data);
-            ((transferNum != '') ? idToType() : await selectGift());
+            ((transferNum !== '') ? idToType() : await selectGift());
             setSentStatus(false);
             setIdSelected('');
         }
@@ -54,14 +54,14 @@ const SendGift = ({type}) => {
         <>
             {sentStatus ? ( 
             <form onSubmit={(event) => handleSubmit(event)}>
-            {type != 'transferencia' && (
+            {type !== 'transferencia' && (
                 <p>Has seleccionado: {idToType()}</p>
             )}
             <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Nombre y Apellido:</label>
                 <input type="name" className="form-control" id="IngresarNombre" aria-describedby="emailHelp" placeholder="Ingresar Nombre" onChange={e => setName(e.target.value)}/>
             </div>
-            {type == 'transferencia' &&(
+            {type === 'transferencia' &&(
                 <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Ingresa el número de transferencia:</label>
                     <input type="msg" className="form-control" id="IngresarNumTransferencia" aria-describedby="emailHelp" placeholder="Número transferencia" onChange={e => setTransferNum(e.target.value)}/>
@@ -71,14 +71,14 @@ const SendGift = ({type}) => {
                 <label htmlFor="exampleInputEmail1">Si quieres puedes dejarnos un mensaje (opcional)</label>
                 <input type="msg" className="form-control" id="IngresarMensaje" aria-describedby="emailHelp" placeholder="" onChange={e => setMsg(e.target.value)}/>
             </div>
-            {isOk == 'noName' && (
+            {isOk === 'noName' && (
                 <div className="alert alert-danger d-flex align-items-center" role="alert">
                     <div>
                         Agrega tu nombre para confirmar el regalo
                     </div>
                 </div>
             )}
-            {isOk == 'noSelected' && (
+            {isOk === 'noSelected' && (
                 <div className="alert alert-danger d-flex align-items-center" role="alert">
                     <div>
                         Selecciona un regalo para continuar
