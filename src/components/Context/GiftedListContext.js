@@ -28,9 +28,18 @@ export const GiftedListProvider = ({defaultValue = [], children}) => {
             console.log(error)
         }
     }
+    const removeGifted = async(id) => {
+        try {
+            await deleteDoc(doc(db, 'giftsList', id))
+            await updateGiftedList();
+        } catch (error) {
+            console.log(error);
+        }
+    }
     const context = {
         addGifted,
         updateGiftedList,
+        removeGifted,
         giftedList,
     }
     return(

@@ -19,6 +19,7 @@ const GiftedList = () => {
                 <th>TIPO</th>
                 <th>MENSAJE</th>
                 <th>TRANSFERENCIA #</th>
+                <th>BORRAR</th>
                 </tr>
             </thead>
             <tbody>
