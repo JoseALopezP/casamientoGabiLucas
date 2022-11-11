@@ -29,3 +29,13 @@
     border-width: 1px 0px;
     border-style: dotted;
 }
+.greenPart{
+    color: #8a9c5f;
+}
+.goldenPart{
+    position: relative;
+    top: 15px;
+    font-family: 'Brittany Signature';
+    font-size: xx-large;
+    color: #9d8028;
+}

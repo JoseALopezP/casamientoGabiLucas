@@ -48,10 +48,10 @@
     text-align: center;
     font-family: montserrat;
     font-weight: 900;
-    color: #8f8f8f;
+    color: #8a9c5f;
 }
 .transferBtn:hover , .giftsBtn:hover{
-    background-color: #8f8f8f;
+    background-color: #8a9c5f;
     color: white;
 }
 
