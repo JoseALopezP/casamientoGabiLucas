@@ -22,7 +22,7 @@ export const GListProvider = ({defaultValue = [], children}) => {
     }
 
     const selectId = (id) =>{
-        if(id == idSelected){
+        if(id === idSelected){
             setIdSelected('');
         }else{
             setIdSelected(id);

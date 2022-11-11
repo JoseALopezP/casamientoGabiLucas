@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Introduction from "./components/Introduction";
 import { ListProvider } from "./components/Context/ListContext";
 import { GListProvider } from "./components/Context/GiftListContext";
 import { GiftedListProvider } from "./components/Context/GiftedListContext";

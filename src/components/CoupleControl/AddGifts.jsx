@@ -1,4 +1,3 @@
-import { async } from '@firebase/util';
 import React, {useContext, useState} from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { GListContext } from '../Context/GiftListContext';

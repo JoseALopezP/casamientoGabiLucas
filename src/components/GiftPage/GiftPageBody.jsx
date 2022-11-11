@@ -1,21 +1,14 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useContext, useEffect} from 'react';
 import { GListContext } from '../Context/GiftListContext';
 import GiftCard from './GiftCard';
 import SendGift from './SendGift';
 
 const GiftPageBody = () => {
-    const [itemSelected, setItemSelected] = useState();
     const {gList, updateGList} = useContext(GListContext);
     useEffect(() =>{
         updateGList()
     }, [])
-    const selectItem = (id) =>{
-        setItemSelected(id);
-    }
-    const itemType = () => {
-
-    }
-
+    const itemType = '';
     return (
         <div className='giftlListBlock'>
             <div className="overflow-auto">

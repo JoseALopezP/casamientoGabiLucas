@@ -6,7 +6,7 @@ import ConfirmedListItem from './ConfirmedListItem';
 const ConfirmedList = () => {
     const {list, updateList} = useContext(ListContext);
     useEffect(() =>{
-        updateList()
+        updateList();
     }, [])
     return (
         <div>

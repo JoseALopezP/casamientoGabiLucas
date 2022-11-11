@@ -1,27 +1,12 @@
-import React, {useState, useContext} from 'react';
+import React, {useContext} from 'react';
 import { GiftedListContext } from '../Context/GiftedListContext';
-import { GListContext } from '../Context/GiftListContext';
+import { Button } from 'react-bootstrap';
 
 
 const GiftedListItem = ({item}) => {
-
-    const {selectGift, gList} = useContext(GListContext);
-    const {giftedList, removeGifted} = useContext(GiftedListContext);
-    const {gifted, setGifted} = useState(0);
+    const {removeGifted} = useContext(GiftedListContext);
     const removeGift = async(id) => {
-        for(const element of giftedList){
-            if(element.nombre == item.nombre){
-                setGifted = gifted + 1;
-            }
-        }
-        if(gifted > 1){
-            removeGifted(id);
-        }else{
-            for(const element of gList){
-                element.descripcion == item.nombre;
-                
-            }
-        }
+        removeGifted(id);
     }
     return (
         <>
